@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produk Kecantikan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 150px;              /* 🔥 lebih kecil */
+      height: 100vh;
+      background: #222;
+      color: #fff;
+      padding: 20px 10px;        /* biar isinya tetap rapi */
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #d90000;
+      text-align: center;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar ul li {
+      margin: 12px 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      display: block;
+      padding: 8px;
+      border-radius: 4px;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .sidebar ul li a:hover {
+      background: #d90000;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      margin-left: 150px;   /* ikut lebar sidebar */
+    }
+
+    /* HEADER */
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      margin-left: 150px;  /* 🔥 pas di samping sidebar */
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d90000;
+    }
+
+    /* HERO */
+    .hero {
+      background: url('https://images.pexels.com/photos/3373747/pexels-photo-3373747.jpeg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 12px 25px;
+      background: #d90000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* SECTION */
+    section {
+      padding: 50px 8%;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 15px;
+      font-weight: 500;
+    }
+
+    /* LINK PENJUALAN */
+    .link-penjualan {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .link-penjualan a {
+      color: #d90000;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .link-penjualan a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+    <header>
+      <div class="logo">Limcosmix</div>
+    </header>
+
+    <div class="hero">
+      <h1>The Best Of Produk Makeup</h1>
+      <p>Belanja Makeup yang Terpercaya</p>
+      <a href="#" class="btn">lihat sekarang</a>
+    </div>
+
+    <!-- CATEGORIES -->
+    <section>
+      <h2>What do you need?</h2>
+      <div class="grid">
+        <div class="card"><img src="Accesories.jpeg" alt=""><p>Accesories</p></div>
+        <div class="card"><img src="Eye Makeup.jpeg" alt=""><p>Eye Makeup</p></div>
+        <div class="card"><img src="Foundation.jpeg" alt=""><p>Foundation</p></div>
+      </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section>
+      <h2>The Best Categories</h2>
+      <div class="grid">
+        <div class="card"><img src="lipblam.jpeg" alt=""><p>lipblam</p></div>
+        <div class="card"><img src="mascara.jpeg" alt=""><p>mascara</p></div>
+        <div class="card"><img src="blush on.jpeg" alt=""><p>blush on</p></div>
+        <div class="card"><img src="eye shadow.jpeg" alt=""><p>eye shadow</p></div>
+        <div class="card"><img src="highlighter.jpeg" alt=""><p>highlighter</p></div>
+        <div class="card"><img src="concealer.jpeg" alt=""><p>concealer</p></div>
+      </div>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section>
+      <h2>Type of Makeup</h2>
+      <div class="grid">
+        <div class="card"><img src="Makeup Dewy.jpeg" alt=""><p>Makeup Dewy</p></div>
+        <div class="card"><img src="Makeup Matte.jpeg" alt=""><p>Makeup Matte</p></div>
+      </div>
+    </section>
+
+    <!-- LINK PENJUALAN -->
+    <div class="link-penjualan">
+      <a href="https://id.shp.ee/eS9xZbT" target="_blank">Shopee</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Limcosmix. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
+
